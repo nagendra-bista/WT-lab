@@ -1,0 +1,34 @@
+<!--
+    Compare inline vs embedded vs external stylesheet using simple examples for each -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+   
+    <style>
+      .embedded p {
+        color: red;
+      }
+    </style>
+     <link rel="stylesheet" href="lab10style.css">
+  </head>
+  <body>
+    <div class="inline">
+      <h3>Example of Inline CSS</h3>
+      <p style="color: blue">
+        In this paraghrpah we have used inline css property
+      </p>
+    </div>
+    <div class="embedded">
+      <h3>Example of Embedded CSS</h3>
+      <p>In this paragraph we have used Embedded CSS</p>
+    </div>
+    <div class="external">
+        <h3>Example of External CSS</h3>
+        <p>In this paragraph we have used External CSS</p>
+    </div>
+  </body>
+</html>
