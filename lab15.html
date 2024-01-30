@@ -1,0 +1,88 @@
+<!--
+    Demonstrate example for fluid layout for designing responsive UI in your webpage responsive fluid html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fluid layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: rgb(91, 89, 89);
+            text-align: center;
+            height: 50px;
+           
+        }
+        header h2{
+            padding-top: 10px;
+        }
+        nav{
+            background-color: slategray;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center ;
+        }
+        li{
+            list-style-type: none;
+        }
+        .container{
+            background-color:bisque;
+            height: 500px;
+            text-align: center;
+            font-size: 19px;
+        }
+        .container p{
+            padding-top: 200px;
+        }
+        footer{
+            background-color:  slategray;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+        }
+       /* Responsive design */
+       @media (max-width: 600px){
+        nav,footer{
+            background-color:cadetblue;
+        }
+        header{
+            background-color: rgb(133, 139, 139);
+        }
+        .container p{
+            font-size: 80%;
+        }
+        
+        .container {
+            height: 400px;
+        }
+        
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Fluid Layout Example</h2>
+    </header>
+    <nav>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Product</li>    
+        </nav>
+    <div class="container">
+       <p> This is Our Example website to  Demonstrate example for fluid layout for designing responsive UI in your webpage responsive fluid html </p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Developed by CSITian</p>
+    </footer>
+</body>
+</html>
